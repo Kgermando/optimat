@@ -19,10 +19,28 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
+    "useDefineForClassFields": false,
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@views/*": [
+        "./src/app/views/*"
+      ],
+      "@core/*": [
+        "./src/app/core/*"
+      ],
+      "@components/*": [
+        "./src/app/components/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
