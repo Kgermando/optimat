@@ -12,8 +12,8 @@ import { ProjectsComponent } from './components/projects/projects.component'
 import { StatisticsComponent } from './components/statistics/statistics.component'
 import { TestimonialsComponent } from './components/testimonials/testimonials.component'
 import { CTAComponent } from './components/cta/cta.component'
-import { BlogsComponent } from './components/blogs/blogs.component'
-import { Footer3Component } from '@/app/components/footer/footer3/footer3.component'
+import { BlogsComponent } from './components/blogs/blogs.component' 
+import { Footer8Component } from '@/app/components/footer/footer8/footer8.component'
 
 @Component({
   selector: 'app-digital-agency',
@@ -33,7 +33,7 @@ import { Footer3Component } from '@/app/components/footer/footer3/footer3.compon
     TestimonialsComponent,
     CTAComponent,
     BlogsComponent,
-    Footer3Component,
+    Footer8Component,
   ],
   templateUrl: './digital-agency.component.html',
   styles: ``,

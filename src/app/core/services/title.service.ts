@@ -30,7 +30,7 @@ export class TitleService {
 
     if (route.snapshot.data['title']) {
       this.titleService.setTitle(
-        `${route.snapshot.data['title']} | Mizzle Angular - Technology and Corporate Bootstrap Theme`
+        `${route.snapshot.data['title']} | Optimat incorporation`
       )
     }
   }

@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core'
   template: `
     <nav aria-label="breadcrumb">
       <ol [class]="'breadcrumb breadcrumb-dots pb-0 mb-0 ' + breadcrumbClass">
-        <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+        <li class="breadcrumb-item"><a href="javascript:void(0);">Acceuil</a></li>
         @if (title) {
           @for (item of title; track $index) {
             <li class="breadcrumb-item">

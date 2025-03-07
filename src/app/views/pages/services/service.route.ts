@@ -10,9 +10,9 @@ export const SERVICE_ROUTES: Route[] = [
     data: { title: 'Services v.1' },
   },
   {
-    path: 'v2',
+    path: 'global',
     component: Servicev2Component,
-    data: { title: 'Services v.2' },
+    data: { title: 'Nos Services' },
   },
   {
     path: 'single',

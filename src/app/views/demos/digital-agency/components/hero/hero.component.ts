@@ -1,5 +1,6 @@
 import { SwiperDirective } from '@/app/components/swiper-directive.component'
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core'
+import { RouterLink } from '@angular/router'
 import { register } from 'swiper/element'
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
 import { SwiperOptions } from 'swiper/types'
@@ -7,7 +8,7 @@ register()
 @Component({
   selector: 'digital-agency-hero',
   standalone: true,
-  imports: [SwiperDirective],
+  imports: [SwiperDirective, RouterLink],
   templateUrl: './hero.component.html',
   styles: ``,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

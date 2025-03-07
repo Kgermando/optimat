@@ -15,8 +15,9 @@ export const ABOUT_ROUTES: Route[] = [
     data: { title: 'About v.2' },
   },
   {
-    path: 'v3',
+    path: 'optimat-incorporation',
     component: AboutV3Component,
-    data: { title: 'About v.3' },
+    data: { title: 'A Propos de Optimat Incorportion' },
   },
 ]
+ 

@@ -18,32 +18,52 @@
         [ngClass]="ulClassName"
       >
         <ng-container *ngIf="menuItems.length">
-          <app-demos-menu-dropdown
-            [menuItems]="menuItems[0].children"
-            [activeMenuItems]="activeMenuItems"
-          ></app-demos-menu-dropdown>
-          <app-pages-menu-dropdown
-            [menuItems]="menuItems[1].children"
-            [activeMenuItems]="activeMenuItems"
-          ></app-pages-menu-dropdown>
-
-          <ng-container *ngIf="resourcesMenu">
-            <app-resources-menu-dropdown></app-resources-menu-dropdown>
-          </ng-container>
-
-          <app-portfolio-menu-dropdown
-            [menuItems]="menuItems[2].children"
-            [activeMenuItems]="activeMenuItems"
-          ></app-portfolio-menu-dropdown>
-
-          <ng-container *ngIf="megaMenu">
-            <app-mega-menu-dropdown></app-mega-menu-dropdown>
-          </ng-container>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="'/contact/v1'">Contact us</a>
+            <a class="nav-link" [routerLink]="'/home/bienvenue'" routerLinkActive="active">Acceuil</a>
           </li>
 
-          @if (docShow) {
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/about/optimat-incorporation'" routerLinkActive="active">A Propos de Nous</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/services/global'" routerLinkActive="active">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/blog/grid'" routerLinkActive="active">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/contact'" routerLinkActive="active">Contactez-Nous</a>
+          </li>
+          
+          <!-- <app-demos-menu-dropdown
+            [menuItems]="menuItems[0].children"
+            [activeMenuItems]="activeMenuItems"
+          ></app-demos-menu-dropdown> -->
+
+          <!-- <app-pages-menu-dropdown
+            [menuItems]="menuItems[1].children"
+            [activeMenuItems]="activeMenuItems"
+          ></app-pages-menu-dropdown> -->
+
+          <!-- <ng-container *ngIf="resourcesMenu">
+            <app-resources-menu-dropdown></app-resources-menu-dropdown>
+          </ng-container> -->
+
+          <!-- <app-portfolio-menu-dropdown
+            [menuItems]="menuItems[2].children"
+            [activeMenuItems]="activeMenuItems"
+          ></app-portfolio-menu-dropdown> -->
+
+          <!-- <ng-container *ngIf="!megaMenu">
+            <app-mega-menu-dropdown></app-mega-menu-dropdown>
+          </ng-container> -->
+
+  
+
+          <!-- @if (docShow) {
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -52,10 +72,12 @@
                 >Docs</a
               >
             </li>
-          }
+          } -->
+
         </ng-container>
       </ul>
     </div>
+    
     <ul class="nav align-items-center dropdown-hover ms-sm-2">
       @if (hideToggle) {
         <!-- Dark mode option START -->
@@ -165,22 +187,22 @@
       <!-- Dark mode option END -->
 
       <!-- Sign up button -->
-      @if (showSignUp) {
+      <!-- @if (showSignUp) {
         <li class="nav-item me-2">
           <a routerLink="/auth/sign-up" class="btn btn-sm btn-light mb-0"
             ><i class="bi bi-person-circle me-1"></i>Sign up</a
           >
         </li>
-      }
+      } -->
 
       <!-- Buy now button -->
-      @if (showBuyNow) {
+      <!-- @if (showBuyNow) {
         <li class="nav-item d-none d-sm-block">
           <button class="btn btn-sm btn-primary mb-0">Buy now!</button>
         </li>
-      }
+      } -->
 
-      @if (floatingSearch) {
+      <!-- @if (floatingSearch) {
         <li
           class="nav nav-item dropdown nav-search px-1 px-lg-3 me-3 me-md-0"
           ngbDropdown
@@ -215,16 +237,15 @@
             </form>
           </div>
         </li>
-      }
-      @if (darkButton) {
+      } -->
+      <!-- @if (darkButton) {
         <li class="nav-item d-none d-sm-block ms-2">
-          <a class="btn btn-dark mb-0" [ngClass]="darkButtonStyle">{{
-            text
-          }}</a>
+          <a class="btn btn-dark mb-0" [ngClass]="darkButtonStyle">
+            {{  text  }}</a>
         </li>
-      }
+      } -->
 
-      @if (showSearchInput) {
+      <!-- @if (showSearchInput) {
         <li
           class="nav-item flex-nowrap align-items-center ms-3 d-none d-md-block"
         >
@@ -243,27 +264,8 @@
             </button>
           </form>
         </li>
-      }
-      @if (showShoppingCart) {
-        <li class="nav-item position-relative ms-2 ms-sm-3">
-          <a
-            class="btn btn-light border btn-round mb-0"
-            (click)="open(content)"
-            data-bs-toggle="offcanvas"
-            href="javascript:void(0);"
-            role="button"
-            aria-controls="offcanvasMenu"
-          >
-            <i class="bi bi-cart3 fa-fw" data-bs-target="#offcanvasMenu"></i>
-          </a>
-          <span
-            class="position-absolute top-0 start-100 translate-middle badge smaller rounded-circle bg-primary mt-xl-2 ms-n1"
-          >
-            {{ cartItemsLength$ | async }}
-            <span class="visually-hidden">unread messages</span>
-          </span>
-        </li>
-      }
+      } -->
+      
       <!-- Responsive navbar toggler -->
       <li class="nav-item">
         <button
@@ -289,6 +291,7 @@
         </button>
       </li>
     </ul>
+
   </div>
 </nav>
 

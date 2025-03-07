@@ -9,7 +9,7 @@ import { inject } from '@angular/core'
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'demos/classic',
+    redirectTo: 'home/bienvenue',
     pathMatch: 'full',
   },
   {
@@ -21,7 +21,6 @@ export const routes: Routes = [
   {
     path: 'shop',
     component: ShopLayoutComponent,
-
     loadChildren: () =>
       import('./views/pages/shop/shop.route').then((mod) => mod.SHOP_ROUTES),
   },

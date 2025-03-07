@@ -20,9 +20,9 @@ export const DEMO_ROUTE: Routes = [
     data: { title: 'Creative Agency' },
   },
   {
-    path: 'agency/digital',
+    path: 'bienvenue',
     component: DigitalAgencyComponent,
-    data: { title: 'Digital Agency' },
+    data: { title: 'Bienvenue sur la page d\'acceuil' },
   },
   {
     path: 'agency/design',

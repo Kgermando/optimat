@@ -9,8 +9,8 @@ export const CONTACT_ROUTES: Route[] = [
     data: { title: 'Contact v.1' },
   },
   {
-    path: 'v2',
+    path: '',
     component: ContactV2Component,
-    data: { title: 'Contact v.2' },
+    data: { title: 'Contactez-Nous!' },
   },
 ]

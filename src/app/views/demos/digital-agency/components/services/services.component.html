@@ -3,75 +3,62 @@
     <!-- Title and content -->
     <div class="row mb-4 mb-md-6">
       <div class="col-md-6 col-lg-5">
-        <h2 class="mb-0">Accelerating your digital transformation</h2>
+        <h2 class="mb-0">Transformez votre rêve en réalité</h2>
       </div>
 
       <div class="col-md-6 col-lg-4 ms-auto">
         <p>
-          Our team of experts specializes in delivering tailored services
-          designed to propel your organization forward in today's fast-paced
-          digital landscape.
+          Notre équipe est une véritable usine à rêves !
+          Elle regroupe des talents complémentaires qui travaillent main dans la main pour donner vie à vos projets.
         </p>
 
         <!-- Slider arrow -->
         <div class="d-flex gap-3 position-relative mt-3">
-          <a
-            href="javascript:void(0);"
-            class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-prev-team"
-            ><i class="bi bi-arrow-left"></i
-          ></a>
-          <a
-            href="javascript:void(0);"
-            class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-next-team"
-            ><i class="bi bi-arrow-right"></i
-          ></a>
+          <a href="javascript:void(0);"
+            class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-prev-team"><i
+              class="bi bi-arrow-left"></i></a>
+          <a href="javascript:void(0);"
+            class="btn btn-white border btn-icon rounded-circle mb-0 swiper-button-next-team"><i
+              class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </div>
 
     <!-- Service start -->
     <div class="swiper swiper-outside-end-n20">
-      <swiper-container
-        class="swiper-wrapper"
-        [config]="swiperService"
-        init="false"
-      >
+      <swiper-container class="swiper-wrapper" [config]="swiperService" init="false">
         <!-- Service item -->
         @for (item of servicesData; track $index) {
-          <swiper-slide class="swiper-slide">
-            <div class="card card-img-scale bg-body overflow-hidden">
-              <!-- Image -->
-              <div class="card-img-scale-wrapper">
-                <img
-                  [src]="item.image"
-                  class="card-img-top img-scale"
-                  alt="service image"
-                />
-              </div>
-              <!-- Card body -->
-              <div class="card-body p-4">
-                <h6>
-                  <a [routerLink]="item.url">{{ item.title }}</a>
-                </h6>
-                <p class="mb-0">{{ item.description }}</p>
-              </div>
-              <!-- Card footer -->
-              <div class="card-footer border-top bg-body p-4">
-                <a
-                  class="icon-link icon-link-hover stretched-link p-0 m-0"
-                  href="javascript:void(0);"
-                  >Explore this service<i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+        <swiper-slide class="swiper-slide">
+          <div class="card card-img-scale bg-body overflow-hidden">
+            <!-- Image -->
+            <div class="card-img-scale-wrapper">
+              <img [src]="item.image" class="card-img-top img-scale" alt="Optimat" />
             </div>
-          </swiper-slide>
+            <!-- Card body -->
+            <div class="card-body p-4">
+              <h6> 
+                <a [routerLink]="item.url">{{ item.title }}</a>
+              </h6>
+              <p class="mb-0">{{ item.description }}</p>
+            </div>
+            <!-- Card footer -->
+            <div class="card-footer border-top bg-body p-4">
+              <a class="icon-link icon-link-hover stretched-link p-0 m-0" 
+              routerLink="/services/global">
+              Découvrez plus de service
+              <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </swiper-slide>
         }
       </swiper-container>
     </div>
     <!-- Service END -->
 
     <!-- CTA -->
-    <div class="d-flex align-items-center gap-2 mt-6">
+    <!-- <div class="d-flex align-items-center gap-2 mt-6">
       <ul class="avatar-group mb-0">
         <li class="avatar avatar-sm">
           <img
@@ -103,6 +90,6 @@
           >Got a project in mind?</a
         >
       </p>
-    </div>
+    </div> -->
   </div>
 </section>
