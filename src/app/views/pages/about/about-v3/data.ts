@@ -1,4 +1,4 @@
-import { rocketIcon2, solutionIcon, ufoIcon } from '@public/assets/data/icons'
+import { numberFourIcon, numberOneIcon, numberThreeIcon, numberTwoIcon } from '@public/assets/data/icons'
 import type {
   FeatureType,
   MemberType,
@@ -6,10 +6,10 @@ import type {
   TestimonialType,
 } from './types'
 
-const team1 = 'assets/images/team/4by4/01.jpg'
-const team2 = 'assets/images/team/4by4/02.jpg'
-const team3 = 'assets/images/team/4by4/03.jpg'
-const team4 = 'assets/images/team/4by4/04.jpg'
+const team1 = 'assets/images/3d/hero1.jpg'
+const team2 = 'assets/images/team/2.png'
+const team3 = 'assets/images/team/3.png'
+const team4 = 'assets/images/team/4.png'
 const team5 = 'assets/images/team/4by4/05.jpg'
 const team6 = 'assets/images/team/4by4/06.jpg'
 
@@ -19,49 +19,55 @@ const avatar5 = 'assets/images/avatar/05.jpg'
 
 export const features: FeatureType[] = [
   {
-    title: 'Innovative Solutions',
+    title: 'Expertise locale',
     description:
-      'We pride ourselves on crafting innovative software solutions that address real-world challenges and drive digital transformation.',
-    icon: solutionIcon,
+      'Nous sommes ancrés dans le tissu culturel congolais et produisons des contenus qui résonnent auprès du public local.',
+    icon: numberOneIcon,
   },
   {
-    title: 'Client-Centric Approach',
+    title: 'Qualité irréprochable',
     description:
-      'Our client-centric approach ensures that we understand your unique needs and provide tailored solutions that exceed expectations.',
-    icon: ufoIcon,
+      'Nous mettons un point d’honneur à livrer des productions de haute qualité, conformes aux standards internationaux.',
+    icon: numberTwoIcon,
   },
   {
-    title: 'Experienced Team',
+    title: 'Innovation',
     description:
-      'Our team of experienced professionals is committed to delivering excellence and quality in every project we undertake.',
-    icon: rocketIcon2,
+      'Nous sommes constamment à la recherche de nouvelles techniques et de nouvelles formes d’expression pour offrir une expérience visuelle unique.',
+    icon: numberThreeIcon,
+  },
+  {
+    title: 'Engagement',
+    description:
+      'Nous nous engageons à soutenir le développement de l’industrie de l’animation 3D en République Démocratique du Congo.',
+    icon: numberFourIcon,
   },
 ]
 
 export const teamMembers: MemberType[] = [
   {
-    firstName: 'Emma',
-    lastName: 'Watson',
-    role: 'Founder',
+    firstName: 'Fernando',
+    lastName: 'NYEMBWE',
+    role: 'Directeur Général',
     image: team1,
   },
   {
-    firstName: 'Allen',
-    lastName: 'Smith',
-    role: 'UI/UX designer',
+    firstName: 'Laeticia',
+    lastName: 'SHOMA',
+    role: 'Directrice Chargée de L\’ Administratif & Financier',
     image: team2,
   },
   {
-    firstName: 'Jacqueline',
-    lastName: 'Miller',
-    role: 'Human Resource',
-    image: team3,
+    firstName: 'Betty Stéphanie',
+    lastName: 'MBUYI',
+    role: 'Directrice Chargée D\’ Études & Projets',
+    image: team4,
   },
   {
-    firstName: 'Frances',
-    lastName: 'Guerrero',
-    role: 'Software Developer',
-    image: team4,
+    firstName: 'Amina',
+    lastName: 'SHABANI',
+    role: 'Directrice Chargée Artistique & Design',
+    image: team3,
   },
   {
     firstName: 'Samuel',
@@ -80,20 +86,39 @@ export const teamMembers: MemberType[] = [
 export const installationSteps: StepType[] = [
   {
     stepNumber: '01',
-    title: "Navigate to the 'Download' Page",
+    title: "AXES MÉTIERS",
+    description: `Etre un partenaire actif et être reconnu comme un acteur majeur dans
+ l’économie Congolaise
+ Anticiper, réagir et s’adapter aux tendances lourdes du marché actuel et
+futur
+ Augmenter nos activités de Promotion Institutionnelle
+ Accroître notre part de marché dans le domaine de l’animation 3D
+ Développer des projets en Partenariat Public Privé
+ Sensibiliser nos clients, nos partenaires et notre personnel aux nouvelles
+ technologies de la production Durable et Responsable`
   },
   {
     stepNumber: '02',
-    title: 'Choose Your Plan',
+    title: 'AXES ORGANISATIONNELS',
+    description: `Gérer chaque projet comme un centre de profit autonome et rentable
+ Développer et appliquer avec rigueur les procédures internes
+ Anticiper et planifier toutes nos actions
+ Favoriser la créativité des équipes pour optimiser nos projets`,
   },
   {
     stepNumber: '03',
-    title: 'Create an Account',
+    title: 'AXES HUMAINS',
+    description: `Améliorer la communication interne
+ Responsabiliser tout le personnel
+ Recruter régulièrement pour faire évoluer nos métiers en gardant notre
+savoir-faire
+ Former en continu l’ensemble du personnel pour garantir la qualité de nos
+productions`,
   },
-  {
-    stepNumber: '04',
-    title: 'Sign In and Start Using',
-  },
+  // {
+  //   stepNumber: '04',
+  //   title: 'Sign In and Start Using',
+  // },
 ]
 
 export const testimonials: TestimonialType[] = [

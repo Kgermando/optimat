@@ -356,6 +356,22 @@ export const wifiIcon = `
         fill="currentColor"></path>
 </svg>`
 
+export const numberOneIcon = `<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <text x="12" y="20" text-anchor="middle" font-size="16" fill="currentColor">1</text>
+</svg>`
+
+export const numberTwoIcon = `<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <text x="12" y="20" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+</svg>`
+
+export const numberThreeIcon = `<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <text x="12" y="20" text-anchor="middle" font-size="16" fill="currentColor">3</text>
+</svg>`
+
+export const numberFourIcon = `<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <text x="12" y="20" text-anchor="middle" font-size="16" fill="currentColor">4</text>
+</svg>`
+
 export const solutionIcon = `<svg width=32 height=32 viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
     <path

@@ -8,6 +8,7 @@ import { CtaComponent } from './components/cta/cta.component'
 import { StickyHeaderComponent } from '@/app/components/sticky-header.component'
 import { HorizontalMenuComponent } from '@/app/components/app-menu/components/horizontal-menu/horizontal-menu.component'
 import { Footer8Component } from '@/app/components/footer/footer8/footer8.component'
+import { CTAComponent } from '@/app/views/demos/digital-agency/components/cta/cta.component'
 
 @Component({
   selector: 'app-about-v3',
@@ -22,6 +23,7 @@ import { Footer8Component } from '@/app/components/footer/footer8/footer8.compon
     TestimonialsComponent,
     CtaComponent,
     Footer8Component,
+    CTAComponent,
   ],
   templateUrl: './about-v3.component.html',
   styles: ``,

@@ -18,6 +18,7 @@ export type MemberType = {
 export type StepType = {
   stepNumber: string
   title: string
+  description: string
 }
 
 type AuthorType = {

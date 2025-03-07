@@ -4,28 +4,32 @@
       <div class="col-lg-6 mb-5 mb-lg-0">
         <!-- Title -->
         <h2 class="mb-3 mb-lg-5">
-          Effortless Download and Installation of Mizzle
+          Ces fondamentaux sont essentiels pour
+          orienter nos axes de développement
         </h2>
-        <p class="mb-3 mb-lg-5">
+        <!-- <p class="mb-3 mb-lg-5">
           Downloading mizzle is a quick and easy process. Follow these simple
           steps to start enjoying the benefits of our powerful software.
-        </p>
+        </p> -->
 
         <!-- Steps -->
         @for (step of installation; track $index) {
-          <div class="d-flex align-items-center gap-3 mb-3">
-            <div
-              class="icon-md bg-primary bg-opacity-10 text-primary rounded-circle fw-bold"
-            >
-              {{ step.stepNumber }}
+          <div>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div
+                class="icon-md bg-primary bg-opacity-10 text-primary rounded-circle fw-bold"
+              >
+                {{ step.stepNumber }}
+              </div>
+              <h6 class="fw-normal mb-0">{{ step.title }}</h6>
             </div>
-            <h6 class="fw-normal mb-0">{{ step.title }}</h6>
+            <p>{{ step.description }} </p>
           </div>
+         
         }
 
         <!-- Download button -->
-        <div class="row g-2 mt-3 mt-lg-5">
-          <!-- Google play store button -->
+        <!-- <div class="row g-2 mt-3 mt-lg-5"> 
           <div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3">
             <a href="javascript:void(0);">
               <img
@@ -34,8 +38,7 @@
                 alt="google-store"
               />
             </a>
-          </div>
-          <!-- App store button -->
+          </div> 
           <div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-3">
             <a href="javascript:void(0);">
               <img
@@ -45,7 +48,7 @@
               />
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="col-lg-5 position-relative ms-auto">
@@ -54,12 +57,12 @@
           <h2
             class="heading-color opacity-1 display-4 text-uppercase rotate-270"
           >
-            since 2018
+          Depuis 2016
           </h2>
         </div>
         <!-- Image -->
         <img
-          src="assets/images/about/14.jpg"
+          src="assets/images/3d/hero2.jpg"
           class="rounded-3 position-relative"
           alt=""
         />

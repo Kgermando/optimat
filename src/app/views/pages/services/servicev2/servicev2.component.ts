@@ -6,6 +6,7 @@ import { FeatureComponent } from './components/feature/feature.component'
 import { CtaComponent } from './components/cta/cta.component'
 import { FaqComponent } from './components/faq/faq.component'
 import { Footer1Component } from '@/app/components/footer/footer1/footer1.component'
+import { CTAComponent } from '@/app/views/demos/digital-agency/components/cta/cta.component'
 
 @Component({
   selector: 'app-servicev2',
@@ -18,6 +19,7 @@ import { Footer1Component } from '@/app/components/footer/footer1/footer1.compon
     CtaComponent,
     FaqComponent,
     Footer1Component,
+    CTAComponent,
   ],
   templateUrl: './servicev2.component.html',
   styles: ``,

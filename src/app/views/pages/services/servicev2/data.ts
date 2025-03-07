@@ -1,50 +1,54 @@
 import {
-  businessIcon2,
-  designIcon,
-  layersIcon,
-  robotIcon2,
-  speakerIcon,
-  strategicIcon,
+  numberFourIcon,
+  numberOneIcon,
+  numberThreeIcon,
+  numberTwoIcon, 
 } from '@public/assets/data/icons'
 import type { FAQType, FeatureType } from './types'
 
 export const features: FeatureType[] = [
   {
-    title: 'Digital marketing',
+    title: 'Production des films d’animation 3D',
     description:
-      'Digital marketing is the art and science of reaching, engaging, and influencing your target audience through online channels.',
-    icon: speakerIcon,
+      `OPTIMAT crée des films d’animation 3D entièrement conçus en RDC. Il est capable de développer des
+histoires originales et de les mettre en scène dans un univers virtuel.`,
+    icon: numberOneIcon,
   },
   {
-    title: 'Web design',
+    title: 'Spots publicitaires en 3D',
     description:
-      "A well-designed website not only captivates visitors but also conveys a brand's identity, ultimately driving engagement and conversions.",
-    icon: designIcon,
+      `Le studio réalise des publicités animées
+en 3D pour promouvoir des produits ou des services. Ces spots peuvent
+être utilisés sur différents supports (télévision, réseaux sociaux, etc.).`,
+    icon: numberTwoIcon,
   },
   {
-    title: 'Strategic planning',
+    title: 'Cours et longs métrages d’animation 3D',
     description:
-      "Strategic planning is the deliberate process of defining an organization's goals and objectives",
-    icon: strategicIcon,
+      `OPTIMAT travaille également
+sur des projets plus ambitieux tels que des courts et longs métrages d’animation. Il peut ainsi développer des histoires plus complexes et plus narratives.`,
+    icon: numberThreeIcon,
   },
   {
-    title: 'Brand design',
+    title: 'Création et modélisation de concepts en 3D',
     description:
-      'Brand design is the creative process of crafting a visual and emotional identity that represents your business',
-    icon: robotIcon2,
+      `Le studio est capable de créer des modèles 3D à partir de zéro, que ce soit pour des personnages, des décors ou des objets.
+      Services de création et de conception: OPTIMAT offre une gamme complète
+      de services créatifs, allant de la conception visuelle à la réalisation technique.`,
+    icon: numberFourIcon,
   },
-  {
-    title: 'Database analysis',
-    description:
-      'Database analysis involves the systematic examination of structured data sets to extract valuable insights, patterns, and trends.',
-    icon: layersIcon,
-  },
-  {
-    title: 'Business consulting',
-    description:
-      'Consultants analyze your operations, provide strategic recommendations assist in implementing solutions to tackle challenges, and drive growth.',
-    icon: businessIcon2,
-  },
+  // {
+  //   title: 'Database analysis',
+  //   description:
+  //     'Database analysis involves the systematic examination of structured data sets to extract valuable insights, patterns, and trends.',
+  //   icon: layersIcon,
+  // },
+  // {
+  //   title: 'Business consulting',
+  //   description:
+  //     'Consultants analyze your operations, provide strategic recommendations assist in implementing solutions to tackle challenges, and drive growth.',
+  //   icon: businessIcon2,
+  // },
 ]
 
 export const faqs: FAQType[] = [
