@@ -4,15 +4,14 @@
       <div class="col-lg-6 mb-6 mb-lg-0">
         <div class="d-flex flex-column h-100">
           <!-- Title -->
-          <h1 class="mb-3">Get in touch for more information</h1>
+          <h1 class="mb-3">Contactez-nous pour plus d'informations</h1>
           <p class="mb-0">
-            You can reach us anytime via
-            <a href="javascript:void(0);">example&#64;gmail.com</a>
+            Vous pouvez nous contacter à tout moment via
+            <a href="mailto:contact@optimatincorporation.com" >contact&#64;optimatincorporation.com</a>
           </p>
-
           <!-- Social button -->
           <div class="d-sm-flex gap-3 align-items-center my-5">
-            <h6 class="mb-3 mb-sm-0">Follow us on:</h6>
+            <h6 class="mb-3 mb-sm-0">Suivez-nous sur:</h6>
             <ul class="list-inline flex-wrap mb-0">
               @for (folower of followerList; track $index; let first = $first) {
                 <li
@@ -32,45 +31,44 @@
           </div>
 
           <!-- Client slider START -->
-          <div class="mt-md-auto">
-            <div class="swiper">
-              <!-- Slider items -->
+          <!-- <div class="mt-md-auto">
+            <div class="swiper"> 
               <swiper-container
                 [config]="swiperConfig"
                 init="false"
                 class="swiper-wrapper align-items-center"
               >
-                <!-- Image -->
+             
                 <swiper-slide class="swiper-slide">
                   <img src="assets/images/client/05.svg" alt="client-img" />
                 </swiper-slide>
-                <!-- Image -->
+             
                 <swiper-slide class="swiper-slide">
                   <img src="assets/images/client/01.svg" alt="client-img" />
                 </swiper-slide>
-                <!-- Image -->
+             
                 <swiper-slide class="swiper-slide">
                   <img src="assets/images/client/02.svg" alt="client-img" />
                 </swiper-slide>
-                <!-- Image -->
+             
                 <swiper-slide class="swiper-slide">
                   <img src="assets/images/client/03.svg" alt="client-img" />
                 </swiper-slide>
-                <!-- Image -->
+             
                 <swiper-slide class="swiper-slide">
                   <img src="assets/images/client/04.svg" alt="client-img" />
                 </swiper-slide>
-                <!-- Image -->
+             
                 <swiper-slide class="swiper-slide">
                   <img src="assets/images/client/06.svg" alt="client-img" />
                 </swiper-slide>
-                <!-- Image -->
+             
                 <swiper-slide class="swiper-slide">
                   <img src="assets/images/client/07.svg" alt="client-img" />
                 </swiper-slide>
               </swiper-container>
             </div>
-          </div>
+          </div> -->
           <!-- Client slider END -->
         </div>
       </div>
@@ -109,7 +107,7 @@
             class="row g-4"
           >
             <div class="col-md-6">
-              <label class="form-label heading-color">Your name *</label>
+              <label class="form-label heading-color">Votre nom *</label>
               <input
                 type="text"
                 formControlName="name"
@@ -117,11 +115,11 @@
                 class="form-control form-control-lg"
                 placeholder="Full name"
               />
-              <div class="invalid-feedback">please enter your name</div>
+              <div class="invalid-feedback">veuillez entrer votre nom</div>
             </div>
 
             <div class="col-md-6">
-              <label class="form-label heading-color">Email address *</label>
+              <label class="form-label heading-color">Adresse email *</label>
               <input
                 type="email"
                 formControlName="email"
@@ -130,11 +128,11 @@
                 id="floatingInput"
                 placeholder="name@example.com"
               />
-              <div class="invalid-feedback">please enter your email</div>
+              <div class="invalid-feedback">veuillez entrer votre email</div>
             </div>
 
             <div class="col-md-6">
-              <label class="form-label heading-color">Phone number *</label>
+              <label class="form-label heading-color">Numéro de téléphone *</label>
               <input
                 type="text"
                 formControlName="number"
@@ -142,14 +140,11 @@
                 class="form-control form-control-lg"
                 placeholder="(xxx) xx xxxx"
               />
-              <div class="invalid-feedback">
-                phoneNo must be a `number` type, but the final value was: `NaN`
-                (cast from the value `""`).
-              </div>
+              <div class="invalid-feedback">veuillez entrer votre téléphone</div>
             </div>
 
             <div class="col-md-6">
-              <label class="form-label heading-color">Company *</label>
+              <label class="form-label heading-color">Entreprise *</label>
               <input
                 type="text"
                 formControlName="company"
@@ -157,28 +152,28 @@
                   'is-invalid': submitted && form['company'].errors,
                 }"
                 class="form-control form-control-lg"
-                placeholder="Company name"
+                placeholder="Nom de l'entreprise"
               />
-              <div class="invalid-feedback">please enter your company</div>
+              <div class="invalid-feedback">veuillez entrer votre entreprise</div>
             </div>
 
             <div class="col-12">
-              <label class="form-label heading-color">Message *</label>
+              <label class="form-label heading-color">Votre Message *</label>
               <textarea
                 formControlName="message"
                 [ngClass]="{
                   'is-invalid': submitted && form['message'].errors,
                 }"
                 class="form-control"
-                placeholder="Write your message here...."
+                placeholder="Écrivez votre message ici...."
                 id="floatingTextarea2"
                 style="height: 150px"
               ></textarea>
-              <div class="invalid-feedback">please enter your message</div>
+              <div class="invalid-feedback">veuillez entrer votre message</div>
             </div>
             <!-- Button -->
             <button type="submit" class="btn btn-lg btn-primary mb-0">
-              Send a message
+              Envoyer un message
             </button>
           </form>
         </div>

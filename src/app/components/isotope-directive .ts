@@ -6,9 +6,12 @@ import {
   OnDestroy,
   SimpleChanges,
   AfterViewInit,
+  PLATFORM_ID, 
+  Inject,
 } from '@angular/core'
 import Isotope from 'isotope-layout'
 import imagesLoaded from 'imagesloaded'
+import { isPlatformBrowser } from '@angular/common'
 
 @Directive({
   selector: '[appIsotope]',
@@ -18,25 +21,41 @@ export class IsotopeDirective implements AfterViewInit, OnChanges, OnDestroy {
   @Input() appIsotopeOptions: Isotope.IsotopeOptions = {}
   private isotopeInstance!: Isotope
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef, 
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngAfterViewInit(): void {
-    this.initializeIsotope()
+    if (isPlatformBrowser(this.platformId)) {
+      import('isotope-layout').then(Isotope => {
+        this.initializeIsotope()
+      });
+    }
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (
-      changes['appIsotopeOptions'] &&
-      !changes['appIsotopeOptions'].isFirstChange()
-    ) {
-      this.updateIsotopeOptions()
+    if (isPlatformBrowser(this.platformId)) {
+      import('isotope-layout').then(Isotope => {
+        if (
+          changes['appIsotopeOptions'] &&
+          !changes['appIsotopeOptions'].isFirstChange()
+        ) {
+          this.updateIsotopeOptions()
+        }
+      });
     }
+    
   }
 
   ngOnDestroy(): void {
-    if (this.isotopeInstance) {
-      this.isotopeInstance.destroy()
+    if (isPlatformBrowser(this.platformId)) {
+      import('isotope-layout').then(Isotope => {
+        if (this.isotopeInstance) {
+          this.isotopeInstance.destroy()
+        }
+      });
     }
+   
   }
 
   private initializeIsotope(): void {

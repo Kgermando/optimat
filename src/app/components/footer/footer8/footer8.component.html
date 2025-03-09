@@ -7,7 +7,7 @@
         <div class="row g-4">
           <!-- Link block -->
           <div class="col-6 col-md-3">
-            <h6 class="mb-2 mb-md-4">Quick links</h6>
+            <h6 class="mb-2 mb-md-4">Liens rapides</h6>
             <ul class="nav flex-column">
               @for (link of quickLinks; track $index; let first = $first) {
                 <li class="nav-item">
@@ -29,7 +29,7 @@
 
           <!-- Link block -->
           <div class="col-6 col-md-3">
-            <h6 class="mb-2 mb-md-4">Community</h6>
+            <h6 class="mb-2 mb-md-4">Communauté</h6>
             <ul class="nav flex-column">
               @for (item of communityLinks; track $index; let first = $first) {
                 <li class="nav-item">
@@ -49,7 +49,7 @@
 
           <!-- Link block -->
           <div class="col-md-6">
-            <h6 class="mb-2 mb-md-4">Contact details</h6>
+            <h6 class="mb-2 mb-md-4">Coordonnées</h6>
             <ul class="list-group list-group-borderless">
               <li class="d-flex mb-3">
                 <i class="me-2 text-primary bi bi-geo-alt"></i
@@ -79,24 +79,22 @@
 
       <!-- Widget 2 START -->
       <div class="col-lg-3">
-        <h6 class="mb-2 mb-md-4">App available on</h6>
-        <div class="row g-2 mb-4 mb-sm-5">
-          <!-- Google play store button -->
+        <!-- <h6 class="mb-2 mb-md-4">App available on</h6>
+        <div class="row g-2 mb-4 mb-sm-5"> 
           <div class="col-6 col-sm-4 col-md-3 col-lg-6">
             <a href="javascript:void(0);">
               <img src="assets/images/elements/google-play.svg" alt="" />
             </a>
-          </div>
-          <!-- App store button -->
+          </div> 
           <div class="col-6 col-sm-4 col-md-3 col-lg-6">
             <a href="javascript:void(0);">
               <img src="assets/images/elements/app-store.svg" alt="app-store" />
             </a>
           </div>
-        </div>
+        </div> -->
 
         <!-- Social buttons -->
-        <h6 class="mb-2 mb-md-4">Follow on</h6>
+        <h6 class="mb-2 mb-md-4">Nous suivre sur</h6>
 
         <ul class="list-inline mb-0 mt-3">
           @for (item of socialMediaLinks; track $index) {

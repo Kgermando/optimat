@@ -2,7 +2,7 @@ import type { FollowUsType, LocationType, WorkType } from './types'
 const webflowImg = 'assets/images/elements/webflow.svg'
 const bootstrapImg = 'assets/images/elements/bootstrap.svg'
 const githubImg = 'assets/images/elements/github.svg'
-const usflagImg = 'assets/images/flags/us.svg'
+const usflagImg = 'assets/images/rdc.jpg'
 const indianflagImg = 'assets/images/flags/in.svg'
 
 export const followUsIcons: FollowUsType[] = [
@@ -48,15 +48,15 @@ export const works: WorkType[] = [
 
 export const locations: LocationType[] = [
   {
-    countryName: 'United States',
-    address: '55/123 Norman street, Banking road, Sydney NSW 5000',
-    number: '469-537-2410 (Toll-free)',
+    countryName: 'République Démoncratique du Congo',
+    address: '01, Wagenia, Immeuble Baobab 4è Étage/4C Kinshasa - Gombe - RDC',
+    number: '(+243) 821 822 722 | (+243) 844 703 772',
     image: usflagImg,
   },
-  {
-    countryName: 'India',
-    address: '55/123 Norman street, Banking road, Sydney NSW 5000',
-    number: '469-537-2410 (Toll-free)',
-    image: indianflagImg,
-  },
+  // {
+  //   countryName: 'India',
+  //   address: '55/123 Norman street, Banking road, Sydney NSW 5000',
+  //   number: '469-537-2410 (Toll-free)',
+  //   image: indianflagImg,
+  // },
 ]

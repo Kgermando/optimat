@@ -29,65 +29,43 @@ type ContactType = {
 export const quickLinks: FooterLinkType[] = [
   {
     name: "About us",
-    link: "/about/v1",
+    link: "/about/optimat-incorporation", 
   },
   {
     name: "Contact us",
-    link: "/contact/v1",
+    link: "/contact",
   },
   {
-    name: "Career",
-    link: "/career",
-    badge: "2 Job",
+    name: "Services",
+    link: "/services/global", 
   },
-  {
-    name: "Career detail",
-    link: "/career/single",
-  },
-  {
-    name: "Become a partner",
-    link: "/contact/v1",
-  },
-  {
-    name: "Sign in",
-    link: "/auth/sign-in",
-  },
-  {
-    name: "Sign up",
-    link: "/auth/sign-up",
-  }
+  // {
+  //   name: "Sign in",
+  //   link: "/auth/sign-in",
+  // },
+  // {
+  //   name: "Sign up",
+  //   link: "/auth/sign-up",
+  // }
 ]
 
 export const quickLinks2: FooterLinkType[] = [
   {
     name: "About us",
-    link: "/about/v1",
+    link: "/about/optimat-incorporation", 
   },
   {
     name: "Contact us",
-    link: "/contact/v1"
+    link: "/contact",
   },
   {
     name: "Services",
-    link: "/services/v1",
+    link: "/services/global", 
   },
-  {
-    name: "Career",
-    link: "/career",
-    badge: "2 Job",
-  },
-  {
-    name: "Career detail",
-    link: "/career/single",
-  },
-  {
-    name: "Case studies",
-    link: "/portfolio/showcase",
-  },
-  {
-    name: "Team",
-    link: "/team",
-  },
+  // {
+  //   name: "Team",
+  //   link: "/team",
+  // },
 ]
 
 export const quickLinks3: FooterLinkType[] = [
@@ -147,21 +125,21 @@ export const communityLinks: FooterLinkType[] = [
     name: "Supports",
     icon: 'bi-box-arrow-up-right'
   },
-  {
-    name: "Faqs",
-    link: "/faq"
-  },
+  // {
+  //   name: "Faqs",
+  //   link: "/faq"
+  // },
   {
     name: "Privacy Policy",
   },
-  {
-    name: "News and blogs",
-    link: "/blog/grid"
-  },
-  {
-    name: "Terms & condition",
-    link: "/terms-conditions"
-  },
+  // {
+  //   name: "News and blogs",
+  //   link: "/blog/grid"
+  // },
+  // {
+  //   name: "Terms & condition",
+  //   link: "/terms-conditions"
+  // },
 ]
 
 export const communityLinks2 = [
@@ -191,11 +169,11 @@ export const socialMediaLinks: SocialMediaLink[] = [
 ]
 
 export const contactDetail = {
-  address: "55/123 Norman street, Banking road.",
-  contact: "(251) 854-6308",
-  email: "help@example.com",
-  weekDays: "Mon - Fri: 09:00 - 21:00",
-  weekEnds: "Sat - Sun: Closed"
+  address: "01, Wagenia, Immeuble Baobab 4è Étage/4C Kinshasa - Gombe - RDC",
+  contact: " (+243) 821 822 722 | (+243) 844 703 772",
+  email: "contact@optimatincorporation.com",
+  weekDays: "Lun - Ven: 09:00 - 17:00",
+  weekEnds: "Sam - Dim: Fermé",
 }
 
 export const contactDetails2: ContactType[] = [
